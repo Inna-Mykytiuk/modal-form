@@ -73,7 +73,7 @@
                <input type="tel" name="user-tel" class="modal-input" required
                placeholder="+380 (96) 445 47 48"
                title="+380 (96) 445 47 48"
-               value="+380"
+               
                pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
                id="user-tel">
                <svg class="form__icon" width="18" height="18">
@@ -93,6 +93,22 @@
                <textarea for="comment" id="comment" rows="" placeholder="Коментар"
                class="comment__text"></textarea>
             </div>
+            <div class="modal-checkbox">
+               <input type="checkbox" 
+               name="agreement" 
+               id="agreement" 
+               class="input-check  visually-hidden">
+               <label for="agreement" 
+               class="check-text" >
+               <span>
+               <svg class="check-icon" width="16" height="15">
+               <use href="./images/form-defs.svg#icon-checkbox"></use>
+               </svg>
+               </span>Погоджуюся з розсилкою та приймаю умови</label>
+            </div>
+            
+            
+
             <button type="submit" class="form-btn btn">Відправити</button>
 
          </form>
